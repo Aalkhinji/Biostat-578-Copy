@@ -13,6 +13,9 @@ This is an **open** book/computer exam. Feel free to use whatever resources you 
 - 1) [5 points] `X` and `Y` are two datatables in `R`, how would do an inner join of `X` and `Y`.
 
 **Solution:** Your first need to use `setkey(X,"key")`, `setkey(Y,"key")`. Then you can do `X[Y,match=0]`. This is faster than `merge`.
+Aisha:
+To do an inner join of X and Y, the command nomatch=0 instead of match in order to excute such functio
+x[Y, nomatch=0]
 
 - 2) [10 points] Let `Z` be a datatable in `R` with three columns: `student_name`, `grade`, and `assignment_type`. Grades are numerical values from 0 to 100. `assignment_type` can be "assignment" or "in-class exam". Write a one line command to compute the average grade for each student broken down by `assignment_type`, and sort by grade from lowest to highest.
 
